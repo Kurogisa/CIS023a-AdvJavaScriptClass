@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Assignment1 pt4 -->
+    <script src="cis023a-hw01.js"></script>
+
+    <!--Assignment1 pt5 self made "form" without using "form"-->
+    1st Number:
+    <input type="text" placeholder="Type Number" id="firstNum" />
+    <br />
+    2nd Number:
+    <input type="text" placeholder="Type Number" id="secondNum" />
+    <br />
+    <button type="button" onclick="multiply();">Multiply</button>
+    <button type="button" onclick="divide();">Divide</button>
+    <br /><br />
+    The re
+    <script>
+      function multiply() {
+        //collect user input 1 and 2
+        //user can check if not an number can return error
+        var firstNum = document.getElementById("firstNum").value;
+        var secondNum = document.getElementById("secondNum").value;
+        var answer = firstNum * secondNum;
+        document.write("The Result Is: <br>" + answer); //this causes result to open on a brand new page
+      }
+      function divide() {}
+    </script>
+  </body>
+</html>

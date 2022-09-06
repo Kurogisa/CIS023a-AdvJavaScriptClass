@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplication and Division Calculator</title>
+  </head>
+  <body>
+    <form id="calcForm">
+      1st Number: <input type="text" placeholder="Type Number" id="firstNum" />
+      <br />
+      2nd Number: <input type="text" placeholder="Type Number" id="secondNum" />
+      <br />
+      <button type="button" onclick="multiply();">Multiply</button>
+      <button type="button" onclick="divide();">Divide</button>
+      <br />
+      <p>The Result Is:</p>
+      <p id="answer"></p>
+    </form>
+
+    <script>
+      function multiply() {
+        //collect user input 1 and 2
+        //user can check if not an number can return error
+        var firstNum = document.getElementById("firstNum").value;
+        var secondNum = document.getElementById("secondNum").value;
+        var answer = firstNum * secondNum;
+        //document.write("The Result Is: <br>" + answer); //this causes result to open on a brand new page
+        document.getElementById("answer").innerHTML = answer;
+      }
+      function divide() {
+        var firstNum = document.getElementById("firstNum").value;
+        var secondNum = document.getElementById("secondNum").value;
+        var answer = firstNum / secondNum;
+        document.getElementById("answer").innerHTML = answer;
+      }
+    </script>
+  </body>
+</html>
