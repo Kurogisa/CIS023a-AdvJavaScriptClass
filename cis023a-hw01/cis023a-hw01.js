@@ -16,5 +16,5 @@ const nameArray = firstNames.split(", ");
 const sortedArray = nameArray.sort();
 //document.write(firstNames + "<br>");
 let newNameList = sortedArray.join(", ");
-//console.log(newNameList);
-document.write(newNameList);
+console.log(newNameList);
+//document.write(newNameList);
